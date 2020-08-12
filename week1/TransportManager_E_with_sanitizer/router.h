@@ -67,24 +67,25 @@ namespace Graph {
 
     while (!vertices_by_weight.empty()) {
       const auto min_vertex_it = vertices_by_weight.begin();
-      //vertices_by_weight.erase(min_vertex_it);
-      done_vertices.insert(min_vertex_it->second);
+      const Weight min_vertex_weight = min_vertex_it->first;
+      const VertexId min_vertex_id = min_vertex_it->second;
+      vertices_by_weight.erase(min_vertex_it);
+      done_vertices.insert(min_vertex_id);
 
-      for (const EdgeId edge_id : graph_.GetIncidentEdges(min_vertex_it->second)) {
+      for (const EdgeId edge_id : graph_.GetIncidentEdges(min_vertex_id)) {
         const auto& edge = graph_.GetEdge(edge_id);
         if (done_vertices.count(edge.to)) {
           continue;
         }
-        if (!routes_internal_data_[edge.to] || routes_internal_data_[edge.to]->weight > min_vertex_it->first + edge.weight) {
+        if (!routes_internal_data_[edge.to] || routes_internal_data_[edge.to]->weight > min_vertex_weight + edge.weight) {
           if (routes_internal_data_[edge.to]) {
             vertices_by_weight.erase({routes_internal_data_[edge.to]->weight, edge.to});
           }
-          routes_internal_data_[edge.to] = RouteInternalData{.weight = min_vertex_it->first + edge.weight,
+          routes_internal_data_[edge.to] = RouteInternalData{ .weight = min_vertex_weight + edge.weight,
                                                              .prev_edge = edge_id};
           vertices_by_weight.emplace(routes_internal_data_[edge.to]->weight, edge.to);
         }
       }
-      vertices_by_weight.erase(min_vertex_it); //
     }
 
     const auto& route_internal_data = routes_internal_data_[to];
@@ -116,4 +117,4 @@ namespace Graph {
     expanded_routes_cache_.erase(route_id);
   }
 
-}
+} // // //
