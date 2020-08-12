@@ -1,1 +1,3 @@
 add_subdirectory(TransportManager_E)
+add_subdirectory(Forbidden_domain_with_sanitizer)
+add_subdirectory(Personal_budget_with_sanitizer)

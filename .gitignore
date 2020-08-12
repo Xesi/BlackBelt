@@ -348,3 +348,7 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+#MY TRASH
+out
+/week1/Personal_budget_with_sanitizer
