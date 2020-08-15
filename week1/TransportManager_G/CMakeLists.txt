@@ -12,7 +12,8 @@ set (HEADERS
 	transport_router.h
 	utils.h 
 	svg.h
-	
+	render_settings.h
+
 	)
  
 set (SOURCES 

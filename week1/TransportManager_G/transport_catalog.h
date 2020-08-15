@@ -4,6 +4,7 @@
 #include "json.h"
 #include "transport_router.h"
 #include "utils.h"
+#include "render_settings.h"
 
 #include <optional>
 #include <set>
@@ -31,7 +32,9 @@ private:
     using Stop = Responses::Stop;
 
 public:
-    TransportCatalog(std::vector<Descriptions::InputQuery> data, const Json::Dict& routing_settings_json);
+    TransportCatalog(std::vector<Descriptions::InputQuery> data,
+        const Json::Dict& routing_settings_json,
+        const Json::Dict& render_settings_json);
 
     const Stop* GetStop(const std::string& name) const;
     const Bus* GetBus(const std::string& name) const;
@@ -54,4 +57,5 @@ private:
     std::unordered_map<std::string, Stop> stops_;
     std::unordered_map<std::string, Bus> buses_;
     std::unique_ptr<TransportRouter> router_;
+    std::unique_ptr<RenderSettings> render_settings_;
 };
