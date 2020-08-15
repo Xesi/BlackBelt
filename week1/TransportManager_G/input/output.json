@@ -1,0 +1,52 @@
+[
+  {
+    "curvature": 1.60481,
+    "request_id": 826874078,
+    "route_length": 11230,
+    "stop_count": 8,
+    "unique_stop_count": 7
+  },
+  {
+    "items": [
+      {
+        "stop_name": "Морской вокзал",
+        "time": 2,
+        "type": "Wait"
+      },
+      {
+        "bus": "114",
+        "span_count": 1,
+        "time": 1.7,
+        "type": "Bus"
+      },
+      {
+        "stop_name": "Ривьерский мост",
+        "time": 2,
+        "type": "Wait"
+      },
+      {
+        "bus": "14",
+        "span_count": 4,
+        "time": 6.06,
+        "type": "Bus"
+      },
+      {
+        "stop_name": "Улица Докучаева",
+        "time": 2,
+        "type": "Wait"
+      },
+      {
+        "bus": "24",
+        "span_count": 1,
+        "time": 2.2,
+        "type": "Bus"
+      }
+    ],
+    "request_id": 1086967114,
+    "total_time": 15.96
+  },
+  {
+    "map": "MMMAAAPPP_____________map__________________MMMAAAPPP",
+    "request_id": 1218663236
+  }
+]
