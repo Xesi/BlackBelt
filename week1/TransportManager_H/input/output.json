@@ -1,0 +1,122 @@
+{
+  "routing_settings": {
+    "bus_wait_time": 2,
+    "bus_velocity": 30
+  },
+  "render_settings": {
+    "width": 1200,
+    "height": 1200,
+    "padding": 50,
+    "stop_radius": 5,
+    "line_width": 14,
+    "stop_label_font_size": 20,
+    "stop_label_offset": [ 7, -3 ],
+    "underlayer_color": [ 255, 255, 255, 0.85 ],
+    "underlayer_width": 3,
+    "color_palette": [
+      "green",
+      [ 255, 160, 0 ],
+      "red"
+    ]
+  },
+  "base_requests": [
+    {
+      "type": "Bus",
+      "name": "14",
+      "stops": [ "Ulitsa Lizy Chaykinoy", "Elektroseti", "Riv'erskiy most", "Gostinitsa Sochi", "Kubanskaya ulitsa", "Po trebovaniyu", "Ulitsa Dokuchaeva", "Ulitsa Lizy Chaykinoy" ],
+      "is_roundtrip": true
+    },
+    {
+      "type": "Bus",
+      "name": "24",
+      "stops": [ "Ulitsa Dokuchaeva", "Parallel'naya ulitsa", "Elektroseti", "Sanatoriy Rodina" ],
+      "is_roundtrip": false
+    },
+    {
+      "type": "Bus",
+      "name": "114",
+      "stops": [ "Morskoy vokzal", "Riv'erskiy most" ],
+      "is_roundtrip": false
+    },
+    {
+      "type": "Stop",
+      "name": "Ulitsa Lizy Chaykinoy",
+      "latitude": 43.590317,
+      "longitude": 39.746833,
+      "road_distances": {
+        "Elektroseti": 4300,
+        "Ulitsa Dokuchaeva": 2000
+      }
+    },
+    {
+      "type": "Stop",
+      "name": "Morskoy vokzal",
+      "latitude": 43.581969,
+      "longitude": 39.719848,
+      "road_distances": { "Riv'erskiy most": 850 }
+    },
+    {
+      "type": "Stop",
+      "name": "Elektroseti",
+      "latitude": 43.598701,
+      "longitude": 39.730623,
+      "road_distances": {
+        "Sanatoriy Rodina": 4500,
+        "Parallel'naya ulitsa": 1200,
+        "Riv'erskiy most": 1900
+      }
+    },
+    {
+      "type": "Stop",
+      "name": "Riv'erskiy most",
+      "latitude": 43.587795,
+      "longitude": 39.716901,
+      "road_distances": {
+        "Morskoy vokzal": 850,
+        "Gostinitsa Sochi": 1740
+      }
+    },
+    {
+      "type": "Stop",
+      "name": "Gostinitsa Sochi",
+      "latitude": 43.578079,
+      "longitude": 39.728068,
+      "road_distances": { "Kubanskaya ulitsa": 320 }
+    },
+    {
+      "type": "Stop",
+      "name": "Kubanskaya ulitsa",
+      "latitude": 43.578509,
+      "longitude": 39.730959,
+      "road_distances": { "Po trebovaniyu": 370 }
+    },
+    {
+      "type": "Stop",
+      "name": "Po trebovaniyu",
+      "latitude": 43.579285,
+      "longitude": 39.733742,
+      "road_distances": { "Ulitsa Dokuchaeva": 600 }
+    },
+    {
+      "type": "Stop",
+      "name": "Ulitsa Dokuchaeva",
+      "latitude": 43.585586,
+      "longitude": 39.733879,
+      "road_distances": { "Parallel'naya ulitsa": 1100 }
+    },
+    {
+      "type": "Stop",
+      "name": "Parallel'naya ulitsa",
+      "latitude": 43.590041,
+      "longitude": 39.732886,
+      "road_distances": {}
+    },
+    {
+      "type": "Stop",
+      "name": "Sanatoriy Rodina",
+      "latitude": 43.601202,
+      "longitude": 39.715498,
+      "road_distances": {}
+    }
+  ],
+  "stat_requests": [ { "..." "dana\\\" fill=\\\"black\\\" stroke=\\\"none\\\" stroke-width=\\\"1\\\" >Parallel'naya ulitsa</text><text x=\\\"690.4467847454753\\\" y=\\\"819.3856709748779\\\" dx=\\\"7\\\" dy=\\\"-3\\\" font-size=\\\"20\\\" font-family=\\\"Verdana\\\" fill=\\\"rgba(255,255,255,0.85)\\\" stroke=\\\"rgba(255,255,255,0.85)\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" >Po trebovaniyu</text><text x=\\\"690.4467847454753\\\" y=\\\"819.3856709748779\\\" dx=\\\"7\\\" dy=\\\"-3\\\" font-size=\\\"20\\\" font-family=\\\"Verdana\\\" fill=\\\"black\\\" stroke=\\\"none\\\" stroke-width=\\\"1\\\" >Po trebovaniyu</text><text x=\\\"99.25163555140999\\\" y=\\\"520.6462422211027\\\" dx=\\\"7\\\" dy=\\\"-3\\\" font-size=\\\"20\\\" font-family=\\\"Verdana\\\" fill=\\\"rgba(255,255,255,0.85)\\\" stroke=\\\"rgba(255,255,255,0.85)\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" >Riv'erskiy most</text><text x=\\\"99.25163555140999\\\" y=\\\"520.6462422211027\\\" dx=\\\"7\\\" dy=\\\"-3\\\" font-size=\\\"20\\\" font-family=\\\"Verdana\\\" fill=\\\"black\\\" stroke=\\\"none\\\" stroke-width=\\\"1\\\" >Riv'erskiy most</text><text x=\\\"50.0\\\" y=\\\"50.0\\\" dx=\\\"7\\\" dy=\\\"-3\\\" font-size=\\\"20\\\" font-family=\\\"Verdana\\\" fill=\\\"rgba(255,255,255,0.85)\\\" stroke=\\\"rgba(255,255,255,0.85)\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" >Sanatoriy Rodina</text><text x=\\\"50.0\\\" y=\\\"50.0\\\" dx=\\\"7\\\" dy=\\\"-3\\\" font-size=\\\"20\\\" font-family=\\\"Verdana\\\" fill=\\\"black\\\" stroke=\\\"none\\\" stroke-width=\\\"1\\\" >Sanatoriy Rodina</text><text x=\\\"695.2561033988173\\\" y=\\\"598.1921174405119\\\" dx=\\\"7\\\" dy=\\\"-3\\\" font-size=\\\"20\\\" font-family=\\\"Verdana\\\" fill=\\\"rgba(255,255,255,0.85)\\\" stroke=\\\"rgba(255,255,255,0.85)\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" >Ulitsa Dokuchaeva</text><text x=\\\"695.2561033988173\\\" y=\\\"598.1921174405119\\\" dx=\\\"7\\\" dy=\\\"-3\\\" font-size=\\\"20\\\" font-family=\\\"Verdana\\\" fill=\\\"black\\\" stroke=\\\"none\\\" stroke-width=\\\"1\\\" >Ulitsa Dokuchaeva</text><text x=\\\"1150.0\\\" y=\\\"432.1126535822507\\\" dx=\\\"7\\\" dy=\\\"-3\\\" font-size=\\\"20\\\" font-family=\\\"Verdana\\\" fill=\\\"rgba(255,255,255,0.85)\\\" stroke=\\\"rgba(255,255,255,0.85)\\\" stroke-width=\\\"3\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" >Ulitsa Lizy Chaykinoy</text><text x=\\\"1150.0\\\" y=\\\"432.1126535822507\\\" dx=\\\"7\\\" dy=\\\"-3\\\" font-size=\\\"20\\\" font-family=\\\"Verdana\\\" fill=\\\"black\\\" stroke=\\\"none\\\" stroke-width=\\\"1\\\" >Ulitsa Lizy Chaykinoy</text></svg>\"" } ]
