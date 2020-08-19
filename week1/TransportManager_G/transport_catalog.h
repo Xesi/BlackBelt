@@ -4,7 +4,7 @@
 #include "json.h"
 #include "transport_router.h"
 #include "utils.h"
-#include "render_settings.h"
+#include "svg.h"
 
 #include <optional>
 #include <set>
@@ -12,6 +12,8 @@
 #include <unordered_map>
 #include <variant>
 #include <vector>
+#include <memory>
+
 
 namespace Responses {
     struct Stop {
@@ -26,13 +28,29 @@ namespace Responses {
     };
 }
 
+struct SvgParams {
+    SvgParams() = default;
+    SvgParams(const Json::Dict& settings);
+
+    double width;
+    double  height;
+    double padding;
+    double stop_radius;
+    double line_width;
+    int stop_label_font_size;
+    Svg::Point stop_label_offset;
+    Svg::Color underlayer_color;
+    double underlayer_width;
+    std::vector<Svg::Color> color_palette;
+};
+
 class TransportCatalog {
 private:
     using Bus = Responses::Bus;
     using Stop = Responses::Stop;
 
 public:
-    TransportCatalog(std::vector<Descriptions::InputQuery> data,
+    TransportCatalog(std::vector<Descriptions::InputQuery>& data,
         const Json::Dict& routing_settings_json,
         const Json::Dict& render_settings_json);
 
@@ -57,5 +75,35 @@ private:
     std::unordered_map<std::string, Stop> stops_;
     std::unordered_map<std::string, Bus> buses_;
     std::unique_ptr<TransportRouter> router_;
-    std::unique_ptr<RenderSettings> render_settings_;
+    SvgParams svg_params;
+    
+    Descriptions::BusesDict buses_dict;
+    Descriptions::StopsDict stops_dict;
+};
+
+class SvgBuilder {
+public:
+    SvgBuilder(const SvgParams& svg_params, const Descriptions::StopsDict& stops);
+
+    void AddBuses(const Descriptions::BusesDict& buses_dict,
+        const Descriptions::StopsDict& stops_dict);
+    void AddStops(const Descriptions::StopsDict& stops_dict);
+    void AddNames(const Descriptions::StopsDict& stops_dict);
+    
+    std::string GetResult() const;
+
+private:
+    Svg::Point GetPoint(Sphere::Point pt) {
+        double x = (pt.longitude - min_lon) * zoom_coef + svg_params.padding;
+        double y = (max_lat - pt.latitude) * zoom_coef + svg_params.padding;
+
+        return { x, y };
+    }
+
+    const SvgParams& svg_params;
+    Svg::Document document;
+
+    double min_lat = 90, max_lat = -90,
+        min_lon = 180, max_lon = -180;
+    double zoom_coef;
 };

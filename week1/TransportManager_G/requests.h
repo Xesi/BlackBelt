@@ -2,6 +2,7 @@
 
 #include "json.h"
 #include "transport_catalog.h"
+#include "transport_router.h"
 
 #include <string>
 #include <variant>

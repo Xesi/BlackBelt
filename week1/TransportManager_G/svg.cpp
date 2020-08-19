@@ -43,7 +43,7 @@ namespace Svg {
 		return *this;
 	}
 	void Circle::Render(ostream& out) const {
-		out << "<circle cx=\"" << cx << "\" cy=\"" << cy << "\" r=\"" << r << '\"';
+		out << "<circle cx=\"" << cx << "\" cy=\"" << cy << "\" r=\"" << r << "\"";
 		PathProps::RenderAttrs(out);
 		out << " />";
 	}
@@ -57,7 +57,7 @@ namespace Svg {
 		for (const Point& p : points) {
 			out << p.x << ',' << p.y << " ";
 		}
-		out << '\"';
+		out << "\"";
 		PathProps::RenderAttrs(out);
 		out << " />";
 	}
@@ -85,10 +85,10 @@ namespace Svg {
 		return *this;
 	}
 	void Text::Render(ostream& out) const {
-		out << "<text x=\"" << x << "\" y=\"" << y << "\" dx=\"" << dx << "\" dy=\"" << dy << '\"'
-			<< " font-size=\"" << fontSize << '\"';
+		out << "<text x=\"" << x << "\" y=\"" << y << "\" dx=\"" << dx << "\" dy=\"" << dy << "\""
+			<< " font-size=\"" << fontSize << "\"";
 		if (fontFamily) {
-			out << " font-family=\"" << *fontFamily << '\"';
+			out << " font-family=\"" << *fontFamily << "\"";
 		}
 		PathProps::RenderAttrs(out);
 		out << " >" << text << "</text>";

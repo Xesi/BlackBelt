@@ -12,9 +12,7 @@ set (HEADERS
 	transport_router.h
 	utils.h 
 	svg.h
-	render_settings.h
-
-	)
+	 )
  
 set (SOURCES 
 	descriptions.cpp
@@ -26,6 +24,7 @@ set (SOURCES
 	utils.cpp
 	main.cpp
 	svg.cpp
+	
 	
 	) 
 

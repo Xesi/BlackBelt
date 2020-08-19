@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+  <polyline points="202.705,725.165 99.2516,520.646 202.705,725.165 "
+            fill="none" stroke="green" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+  <polyline points="1150,432.113 580.956,137.796 99.2516,520.646 491.264,861.722 592.751,846.627 690.447,819.386 695.256,598.192 1150,432.113 "
+            fill="none" stroke="rgb(255,160,0)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+  <polyline points="695.256,598.192 660.397,441.801 580.956,137.796 50,50 580.956,137.796 660.397,441.801 695.256,598.192 "
+            fill="none" stroke="red" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+
+  <circle cx="491.264" cy="861.722" r="5" fill="white" stroke="none" stroke-width="1" />
+  <circle cx="592.751" cy="846.627" r="5" fill="white" stroke="none" stroke-width="1" />
+  <circle cx="202.705" cy="725.165" r="5" fill="white" stroke="none" stroke-width="1" />
+  <circle cx="660.397" cy="441.801" r="5" fill="white" stroke="none" stroke-width="1" />
+  <circle cx="690.447" cy="819.386" r="5" fill="white" stroke="none" stroke-width="1" />
+  <circle cx="99.2516" cy="520.646" r="5" fill="white" stroke="none" stroke-width="1" />
+  <circle cx="50" cy="50" r="5" fill="white" stroke="none" stroke-width="1" />
+  <circle cx="695.256" cy="598.192" r="5" fill="white" stroke="none" stroke-width="1" />
+  <circle cx="1150" cy="432.113" r="5" fill="white" stroke="none" stroke-width="1" />
+  <circle cx="580.956" cy="137.796" r="5" fill="white" stroke="none" stroke-width="1" />
+  <text x="491.264" y="861.722" dx="7" dy="-3" font-size="20" font-family="Verdana" fill="rgba(255,255,255,0.85000000)" stroke="rgba(255,255,255,0.85000000)" stroke-width="1.00000000" stroke-linecap="round" stroke-linejoin="round" >Гостиница Сочи</text>
+  <text x="491.26376257" y="861.72171693" dx="7.00000000" dy="-3.00000000" font-size="20" font-family="Verdana" fill="black" stroke="none" stroke-width="1.00000000" >Гостиница Сочи</text>
+  <text x="592.75091750" y="846.62677517" dx="7.00000000" dy="-3.00000000" font-size="20" font-family="Verdana" fill="rgba(255,255,255,0.85000000)" stroke="rgba(255,255,255,0.85000000)" stroke-width="1.00000000" stroke-linecap="round" stroke-linejoin="round" >Кубанская улица</text>
+  <text x="592.75091750" y="846.62677517" dx="7.00000000" dy="-3.00000000" font-size="20" font-family="Verdana" fill="black" stroke="none" stroke-width="1.00000000" >Кубанская улица</text>
+  <text x="202.70464337" y="725.16515079" dx="7.00000000" dy="-3.00000000" font-size="20" font-family="Verdana" fill="rgba(255,255,255,0.85000000)" stroke="rgba(255,255,255,0.85000000)" stroke-width="1.00000000" stroke-linecap="round" stroke-linejoin="round" >Морской вокзал</text>
+  <text x="202.70464337" y="725.16515079" dx="7.00000000" dy="-3.00000000" font-size="20" font-family="Verdana" fill="black" stroke="none" stroke-width="1.00000000" >Морской вокзал</text>
+  <text x="660.39731929" y="441.80149992" dx="7.00000000" dy="-3.00000000" font-size="20" font-family="Verdana" fill="rgba(255,255,255,0.85000000)" stroke="rgba(255,255,255,0.85000000)" stroke-width="1.00000000" stroke-linecap="round" stroke-linejoin="round" >Параллельная улица</text>
+  <text x="660.39731929" y="441.80149992" dx="7.00000000" dy="-3.00000000" font-size="20" font-family="Verdana" fill="black" stroke="none" stroke-width="1.00000000" >Параллельная улица</text>
+  <text x="690.44678475" y="819.38567098" dx="7.00000000" dy="-3.00000000" font-size="20" font-family="Verdana" fill="rgba(255,255,255,0.85000000)" stroke="rgba(255,255,255,0.85000000)" stroke-width="1.00000000" stroke-linecap="round" stroke-linejoin="round" >По требованию</text>
+  <text x="690.44678475" y="819.38567098" dx="7.00000000" dy="-3.00000000" font-size="20" font-family="Verdana" fill="black" stroke="none" stroke-width="1.00000000" >По требованию</text>
+  <text x="99.25163555" y="520.64624222" dx="7.00000000" dy="-3.00000000" font-size="20" font-family="Verdana" fill="rgba(255,255,255,0.85000000)" stroke="rgba(255,255,255,0.85000000)" stroke-width="1.00000000" stroke-linecap="round" stroke-linejoin="round" >Ривьерский мост</text>
+  <text x="99.25163555" y="520.64624222" dx="7.00000000" dy="-3.00000000" font-size="20" font-family="Verdana" fill="black" stroke="none" stroke-width="1.00000000" >Ривьерский мост</text>
+  <text x="50.00000000" y="50.00000000" dx="7.00000000" dy="-3.00000000" font-size="20" font-family="Verdana" fill="rgba(255,255,255,0.85000000)" stroke="rgba(255,255,255,0.85000000)" stroke-width="1.00000000" stroke-linecap="round" stroke-linejoin="round" >Санаторий Родина</text>
+  <text x="50.00000000" y="50.00000000" dx="7.00000000" dy="-3.00000000" font-size="20" font-family="Verdana" fill="black" stroke="none" stroke-width="1.00000000" >Санаторий Родина</text>
+  <text x="695.25610340" y="598.19211744" dx="7.00000000" dy="-3.00000000" font-size="20" font-family="Verdana" fill="rgba(255,255,255,0.85000000)" stroke="rgba(255,255,255,0.85000000)" stroke-width="1.00000000" stroke-linecap="round" stroke-linejoin="round" >Улица Докучаева</text>
+  <text x="695.25610340" y="598.19211744" dx="7.00000000" dy="-3.00000000" font-size="20" font-family="Verdana" fill="black" stroke="none" stroke-width="1.00000000" >Улица Докучаева</text>
+  <text x="1150.00000000" y="432.11265358" dx="7.00000000" dy="-3.00000000" font-size="20" font-family="Verdana" fill="rgba(255,255,255,0.85000000)" stroke="rgba(255,255,255,0.85000000)" stroke-width="1.00000000" stroke-linecap="round" stroke-linejoin="round" >Улица Лизы Чайкиной</text>
+  <text x="1150.00000000" y="432.11265358" dx="7.00000000" dy="-3.00000000" font-size="20" font-family="Verdana" fill="black" stroke="none" stroke-width="1.00000000" >Улица Лизы Чайкиной</text>
+  <text x="580.95580022" y="137.79639381" dx="7.00000000" dy="-3.00000000" font-size="20" font-family="Verdana" fill="rgba(255,255,255,0.85000000)" stroke="rgba(255,255,255,0.85000000)" stroke-width="1.00000000" stroke-linecap="round" stroke-linejoin="round" >Электросети</text>
+  <text x="580.95580022" y="137.79639381" dx="7.00000000" dy="-3.00000000" font-size="20" font-family="Verdana" fill="black" stroke="none" stroke-width="1.00000000" >Электросети</text>
+</svg>

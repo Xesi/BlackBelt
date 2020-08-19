@@ -96,7 +96,7 @@ namespace Requests {
         else if(type == "Route") {
             return Route{ attrs.at("from").AsString(), attrs.at("to").AsString() };
         }
-        else if (type == "Map") {
+        else {
             return Map();
         }
     }

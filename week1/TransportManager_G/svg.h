@@ -63,12 +63,12 @@ namespace Svg {
 			RenderColor(out, fill);
 			out << "\" stroke=\"";
 			RenderColor(out, stroke);
-			out << "\" stroke-width=\"" << strokeWidth << '\"';
+			out << "\" stroke-width=\"" << strokeWidth << "\"";
 			if (strokeLineCap) {
-				out << " stroke-linecap=\"" << *strokeLineCap << '\"';
+				out << " stroke-linecap=\"" << *strokeLineCap << "\"";
 			}
 			if (strokeLineJoin) {
-				out << " stroke-linejoin=\"" << *strokeLineJoin << '\"';
+				out << " stroke-linejoin=\"" << *strokeLineJoin << "\"";
 			}
 		}
 
@@ -126,7 +126,7 @@ namespace Svg {
 	public:
 		template <typename ObjectType>
 		void Add(ObjectType obj) {
-			objects.push_back(make_unique<ObjectType>(std::move(obj)));
+			objects.push_back(std::make_unique<ObjectType>(std::move(obj)));
 		}
 
 		void Render(std::ostream& out) const override;

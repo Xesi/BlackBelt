@@ -33,7 +33,7 @@ namespace Descriptions {
     std::vector<InputQuery> ReadDescriptions(const std::vector<Json::Node>& nodes);
 
     template <typename Object>
-    using Dict = std::unordered_map<std::string, const Object*>;
+    using Dict = std::map<std::string, const Object*>;
 
     using StopsDict = Dict<Stop>;
     using BusesDict = Dict<Bus>;
