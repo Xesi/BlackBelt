@@ -6,8 +6,10 @@ project(black_belt)
 
 include_directories(
 	week1,
-	week2
-	)
+	week2)
+
+include_directories(libs)
+ 
 add_subdirectory(week1)
 add_subdirectory(week2)
 #add_subdirectory(week3)

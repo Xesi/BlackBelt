@@ -1,12 +1,10 @@
 set(PROJECT
-	SaveAndLoad
+	PhoneBook
 	)
 
-set (HEADERS 
-	"saveload.h")
+set (HEADERS )
  
 set (SOURCES 
-	"test.cpp"
 	) 
 
 
